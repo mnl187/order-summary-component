@@ -19,12 +19,11 @@ body {
 
 h1 {
     text-align: center;
-    margin: 30px 0 20px 0;
     font-weight: 900;
 }
 
 p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 p, button {
@@ -32,17 +31,15 @@ p, button {
 }
 
 .box {
-    aspect-ratio: 0.6 / 1;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 25px;
-    background-color: #fff;
+    background-color:#fff;
 }
 
 .box-text {
-    margin: 0 30px;
     text-align: center;
 }
 
@@ -56,9 +53,7 @@ p, button {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     background-color: var(--neutral-v-pale-vblue);
-    margin: 15px;
     border-radius: 10px;
-    padding: 15px 5px;
 }
 
 .icon-img, .box-music-plan, .link-music-plan {
@@ -66,30 +61,21 @@ p, button {
     justify-self: center;
 }
 
-.icon-img {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.link-music-plan {
-    padding-right: 15px;
-}
-
 .btn-box {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    margin: 15px;
+    margin: 1rem;
 }
 
 .btn-payment {
     background-color: var(--primary-bright-blue);
     color: #fff;
     text-align: center;
-    padding: 15px;
+    padding: 1rem;
     font-weight: 700;
     border-radius: 10px;
     border: none;
-    box-shadow: 0 10px 4em var(--neutral-dark-blue);
+    box-shadow: 0 10px 1em var(--neutral-dark-blue);
 }
 
 .btn-cancel {
@@ -98,13 +84,40 @@ p, button {
     font-weight: 700;
 }
 
-@media (max-width: 1439px) {
+@media (min-width: 375px) {
     body {
+    }
 
+    h1 {
+        margin: 2rem 0 1.1rem 0;
     }
 
     .box {
-        height: 80%;
+        width: 20rem;
+        height: 33rem;
+        /*aspect-ratio: 0.6 / 1;*/
+    }
+    .box-text {
+        margin: 0 2rem;
+    }
+    .box-music-plan {
+        margin: 1rem;
+        padding: 1rem 0.4rem;
+    }
+    .icon-img {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .link-music-plan {
+        padding-right: 1rem;
+    }
+    .btn-box {
+        margin: 1rem;
+    }
+
+    .btn-payment {
+        padding: 1rem;
     }
 }
 
@@ -117,46 +130,46 @@ p, button {
     }
 
     h1 {
-        margin: 50px 0 0 0;
-        font-size: 2em;
+        margin: 2rem 0 0 0;
+        font-size: 2rem;
 
     }
 
     .box {
-        height: 70%;
-        width: 30%;;
+        height: 40rem;
+        width: 22rem;;
     }
 
     .box-text {
-        margin: 20px 80px;
+        margin: 1rem 5rem;
     }
 
     .box-music-plan {
-        margin: 35px 60px;
-        padding: 25px 0;
+        margin: 1rem 2rem;
+        padding: 1.5rem 0;
     }
 
     .icon-img {
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     .link-music-plan {
-        padding-right: 25px;
+        padding-right: 1.5rem;
     }
 
     .btn-box {
-        margin: 35px 60px 0 60px;
+        margin: 1rem 2rem 0 2rem;
     }
 
     .btn-payment {
-        padding: 20px;
+        padding: 1.2rem;
         font-size: 1.1rem;
         box-shadow: 0 10px 4em var(--neutral-dark-blue);
     }
 
     .btn-cancel {
-        padding: 20px;
+        padding: 25px;
         font-weight: 700;
         font-size: 1.1rem;
     }
