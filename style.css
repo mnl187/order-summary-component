@@ -6,7 +6,6 @@
     --neutral-dark-blue: hsl(223, 47%, 23%);
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -135,9 +134,7 @@ p, button {
     .box-music-plan {
         margin: 35px 60px;
         padding: 25px 0;
-
     }
-
 
     .icon-img {
         padding-left: 25px;

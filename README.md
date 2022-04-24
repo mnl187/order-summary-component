@@ -1,5 +1,8 @@
 # Frontend Mentor - Order summary card
 
+## Check on website:
+## https://m-order-summary-component.netlify.app
+
 ![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
