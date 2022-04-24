@@ -98,7 +98,7 @@ p, button {
     font-weight: 700;
     border-radius: 10px;
     border: none;
-    box-shadow:  0 0 10px var(--neutral-dark-blue) ;
+    box-shadow:  0 5px 4em var(--neutral-dark-blue);
 }
 
 .btn-cancel {
