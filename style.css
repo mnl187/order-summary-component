@@ -4,7 +4,6 @@
     --neutral-v-pale-vblue: hsl(225, 100%, 98%);
     --neutral-desaturated-blue: hsl(224, 23%, 55%);
     --neutral-dark-blue: hsl(223, 47%, 23%);
-
 }
 
 
@@ -22,6 +21,7 @@ body {
 h1 {
     text-align: center;
     margin: 30px 0 20px 0;
+    font-weight: 900;
 }
 
 p {
@@ -29,20 +29,7 @@ p {
 }
 
 p, button {
-
-    color: var(--neutral-desaturated-blue   );
-}
-
-
-.box-text {
-    margin: 0 30px 0 30px;
-    text-align: center;
-}
-
-.box-img {
-    width: 100%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    color: var(--neutral-desaturated-blue);
 }
 
 .box {
@@ -55,27 +42,34 @@ p, button {
     background-color: #fff;
 }
 
+.box-text {
+    margin: 0 30px;
+    text-align: center;
+}
+
+.box-img {
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
 .box-music-plan {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     background-color: var(--neutral-v-pale-vblue);
     margin: 15px;
     border-radius: 10px;
+    padding: 15px 5px;
 }
 
 .icon-img, .box-music-plan, .link-music-plan {
     align-self: center;
     justify-self: center;
-
 }
 
 .icon-img {
     padding-left: 15px;
     padding-right: 15px;
-}
-
-.box-music-plan {
-    padding: 15px 5px;
 }
 
 .link-music-plan {
@@ -86,8 +80,6 @@ p, button {
     display: grid;
     grid-template-rows: 1fr 1fr;
     margin: 15px;
-
-
 }
 
 .btn-payment {
@@ -98,28 +90,77 @@ p, button {
     font-weight: 700;
     border-radius: 10px;
     border: none;
-    box-shadow:  0 5px 4em var(--neutral-dark-blue);
+    box-shadow: 0 10px 4em var(--neutral-dark-blue);
 }
 
 .btn-cancel {
     background: transparent;
     border: none;
     font-weight: 700;
-
 }
 
-
 @media (max-width: 1439px) {
+    body {
+
+    }
+
     .box {
-        aspect-ratio: 0.6 / 1;
         height: 80%;
-        /*width: 80%;*/
     }
 }
 
 @media (min-width: 1440px) {
+    body {
+        background-image: url("images/pattern-background-desktop.svg");
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    h1 {
+        margin: 50px 0 0 0;
+        font-size: 2em;
+
+    }
+
     .box {
         height: 70%;
-        width: 80%;
+        width: 30%;;
+    }
+
+    .box-text {
+        margin: 20px 80px;
+    }
+
+    .box-music-plan {
+        margin: 35px 60px;
+        padding: 25px 0;
+
+    }
+
+
+    .icon-img {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .link-music-plan {
+        padding-right: 25px;
+    }
+
+    .btn-box {
+        margin: 35px 60px 0 60px;
+    }
+
+    .btn-payment {
+        padding: 20px;
+        font-size: 1.1rem;
+        box-shadow: 0 10px 4em var(--neutral-dark-blue);
+    }
+
+    .btn-cancel {
+        padding: 20px;
+        font-weight: 700;
+        font-size: 1.1rem;
     }
 }
